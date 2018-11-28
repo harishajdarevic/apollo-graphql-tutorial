@@ -1,0 +1,37 @@
+# Write your query or mutation here
+query GetLaunches {
+  launches {
+    id
+    mission {
+      name
+      missionPatch
+    }
+  }
+}
+
+query GetLaunchById {
+  launch(id: 2) {
+    id
+    site
+    isBooked
+  }
+}
+
+
+
+query GetLaunchByIdWithVariable($launchId: ID!) {
+  launch(id: $launchId) {
+    id
+    site
+    isBooked
+  }
+}
+
+
+----------
+
+query variables
+
+{
+	"launchId" : 5
+}
