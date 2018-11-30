@@ -4,7 +4,7 @@ const { createStore } = require('./utils');
 
 
 const LaunchAPI = require('./datasources/launch');
-const UserAPI = require('./datasources/launch');
+const UserAPI = require('./datasources/user');
 
 const store = createStore();
 
